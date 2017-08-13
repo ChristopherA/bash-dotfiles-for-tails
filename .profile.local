@@ -21,7 +21,7 @@
 
 if [[ -t 0 || -p /dev/stdin ]]
 then # shell is interactive
-  if $SCRIPT_DEBUG; then echo "   ~/.profile.local sourced."; fi
+  if $SCRIPT_DEBUG; then echo "      ~/.profile.local sourced."; fi
 fi
 
 # Git credentials - not under version control to prevent people from
@@ -41,13 +41,13 @@ git config --global credential.helper osxkeychain
 # If you wish all commits to be signed, intall GPG and keys, and uncomment
 # the following 3 lines:
 
-#GIT_AUTHOR_GPG_KEY="12345678"
-#git config --global user.signingKey "$GIT_AUTHOR_GPG_KEY"
-#git config --global commit.gpgsign true
+GIT_AUTHOR_GPG_KEY="357405ED"
+git config --global user.signingKey "$GIT_AUTHOR_GPG_KEY"
+git config --global commit.gpgsign true
 
 # All local bash interface specific functionality has been executed
 
 if [[ -t 0 || -p /dev/stdin ]]
 then # shell is interactive
-  if $SCRIPT_DEBUG; then echo "   ~/.profile.local completed."; fi
+  if $SCRIPT_DEBUG; then echo "      ~/.profile.local completed."; fi
 fi
