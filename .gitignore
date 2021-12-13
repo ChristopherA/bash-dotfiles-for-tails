@@ -1,6 +1,10 @@
 # ~/.gitignore: local .gitignore file.
 
-# /.config/gh/hosts.yml has github oauth token in it, so don't back up.
+# .gitconfig has user account specific values in it, and sometimes secrets, so ignore
+
+.gitconfig
+
+# /.config/gh/hosts.yml has github oauth token in it, so ignore.
 
 /.config/gh/hosts.yml
 
