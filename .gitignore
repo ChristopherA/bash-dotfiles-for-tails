@@ -2,5 +2,7 @@
 
 # gh/hosts.yml has github oauth token in it, so don't back up.
 
-.config/gh/hosts.yml
+/.config/gh/hosts.yml
+.DS_Store
+._.DS_Store
 
