@@ -1,0 +1,6 @@
+# ~/.gitignore: local .gitignore file.
+
+# gh/hosts.yml has github oauth token in it, so don't back up.
+
+.config/gh/hosts.yml
+
